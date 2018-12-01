@@ -45,7 +45,7 @@ Example code to get started:
     </head>
 
     <body onload="start()">
-    <div id="egdiv"></div>
+    <div id="eg-division"></div>
     </body>
     </html>     
     
