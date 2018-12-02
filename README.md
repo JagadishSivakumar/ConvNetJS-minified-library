@@ -49,3 +49,12 @@ Example code to get started:
     </body>
     </html>     
     
+# Neural Net Classification 
+Simple two layer network binary classifier, 2 dimensional data points.
+First Layer of network - input layer ,declare size of input data.
+ConvNetJS layers - based on Vol, 3 dimensional(sx,sy,depth) volume of numbers.
+Next three layers - fully connected ('fc').
+Last layer - Classifier layer ('softmax') , outputs probability.
+
+In case of not using images , input volume be 1x1x2
+Declaring size of input volume (out_sx=1,out_sy=1,out_depth=2)
