@@ -58,3 +58,8 @@ Last layer - Classifier layer ('softmax') , outputs probability.
 
 In case of not using images , input volume be 1x1x2
 Declaring size of input volume (out_sx=1,out_sy=1,out_depth=2)
+
+    //layer definitions
+    var layer_defs=[];
+    //Declaring size- 1x1x2 (vol class - 3D volume)
+    layer_defs.push({type:'input', out_sx:1, out_sy:1, out_depth:2});
