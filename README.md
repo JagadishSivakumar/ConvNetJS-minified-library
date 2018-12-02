@@ -63,3 +63,8 @@ Declaring size of input volume (out_sx=1,out_sy=1,out_depth=2)
     var layer_defs=[];
     //Declaring size- 1x1x2 (vol class - 3D volume)
     layer_defs.push({type:'input', out_sx:1, out_sy:1, out_depth:2});
+    //Fully Connected Layers ('fc')
+    layer_defs.push({type:'fc', num_neurons:20, activation:'relu'});
+    layer_defs.push({type:'fc', num_neurons:20, activation:'relu'});
+    //Softmax
+    layer_defs.push({type:'softmax', num_classes:2});
