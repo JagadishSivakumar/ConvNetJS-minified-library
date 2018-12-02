@@ -68,3 +68,14 @@ Declaring size of input volume (out_sx=1,out_sy=1,out_depth=2)
     layer_defs.push({type:'fc', num_neurons:20, activation:'relu'});
     //Softmax
     layer_defs.push({type:'softmax', num_classes:2});
+    
+    //Creating a net 
+    var net = new convnetjs.Net();
+    net.makeLayers(layer_defs);
+    
+    //Creating a volume
+    var x = new convnetjs.Vol([0.5, -1.3]);
+    
+    var probability_volume = net.forward(x);
+    console.log('probability that x is class 0: ' + probability_volume.w[0]);
+    // prints 0.50101
